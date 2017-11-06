@@ -35,45 +35,45 @@
 
 <body>
 
-    <div id="com-chilipeppr-widget-luaeditor" class="panel panel-default">
+    <div id="com-chilipeppr-widget-pythoneditor" class="panel panel-default">
         <div class="panel-heading">
 
 
-            
+
 
             <div class="btn-toolbar xpull-right" role="toolbar" style="margin-right:6px;">
 
-            <div class="panel-title pull-left" data-toggle="popover" 
-            data-original-title="" title="" style="padding-right:10px">Lua&nbsp;Editor v4</div>
+            <div class="panel-title pull-left" data-toggle="popover"
+            data-original-title="" title="" style="padding-right:10px">Python&nbsp;Editor v4</div>
 
 
                 <div class="btn-group pull-right" style="margin-right:0;">
                     <div class="dropdown">
-                        <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown" 
+                        <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown"
                         data-original-title="" title=""><span class="caret"></span></button>
                         <ul class="dropdown-menu dropdown-menu-fork xdropdown-menu-right" role="menu">
-    
+
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="btn-group xpull-right" xstyle="margin-right:6px;">
-                    <button type="button" id="" class="btn btn-xs btn-default luaeditor-new" 
-                    data-container="body" data-toggle="popover" data-placement="auto" 
+                    <button type="button" id="" class="btn btn-xs btn-default pythoneditor-new"
+                    data-container="body" data-toggle="popover" data-placement="auto"
                     data-content="Start a new file in the editor" data-trigger="hover"
                     data-delay="1000" data-original-title="" title=""> New
                     </button>
                 </div>
-    
+
                 <div class="btn-group xpull-right" xstyle="margin-right:6px;">
-                    <button type="button" id="" class="btn btn-xs btn-default luaeditor-run" 
+                    <button type="button" id="" class="btn btn-xs btn-default pythoneditor-run"
                     data-container="body" data-toggle="popover" data-placement="auto" data-content="Run the script. Ctrl+Enter is the shortcut which is quite handy." data-trigger="hover"
                     data-delay="1000" data-original-title="" title=""> Run <span class="glyphicon glyphicon-play"></span>
                     </button>
                 </div>
 
                 <div class="btn-group xpull-right hidden" xstyle="margin-right:6px;">
-                    <button type="button" id="" class="btn btn-xs btn-default luaeditor-uploadrun" 
+                    <button type="button" id="" class="btn btn-xs btn-default pythoneditor-uploadrun"
                     data-container="body" data-toggle="popover" data-placement="auto" data-content="Upload the script to the device first as a file. Then compile the file on the device. Then run the file. You must provide a name for the file." data-trigger="hover"
                     data-delay="1000" data-original-title="" title=""> Upload > Run <span class="glyphicon glyphicon-upload"></span>
                     </button>
@@ -82,16 +82,16 @@
 
                 <div class="btn-group xpull-right" xstyle="margin-right:6px;">
                     <button class="btn btn-default btn-xs btn-filerename" type="button"
-                        data-container="body" data-toggle="popover" 
+                        data-container="body" data-toggle="popover"
                         data-placement="auto" data-trigger="hover"
-                        data-content="Rename the file." 
+                        data-content="Rename the file."
                         data-delay="1000">
                         Rename <span class="hidden glyphicon glyphicon-edit"></span>
                     </button>
-                    <button type="button" id="" class="btn btn-xs btn-default luaeditor-save" 
-                    data-container="body" data-toggle="popover" data-placement="auto" 
+                    <button type="button" id="" class="btn btn-xs btn-default pythoneditor-save"
+                    data-container="body" data-toggle="popover" data-placement="auto"
                     data-content="Save the script. Saved files are available in pulldown on right." data-trigger="hover"
-                    data-delay="1000" data-original-title="" title=""> <span 
+                    data-delay="1000" data-original-title="" title=""> <span
                     class="glyphicon glyphicon-floppy-disk"></span>
                     </button>
                 </div>
@@ -99,22 +99,22 @@
 
                 <div class="btn-group xpull-right">
                     <div class="dropdown">
-                        <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown" data-original-title="" 
+                        <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown" data-original-title=""
                         title=""><span class="glyphicon glyphicon-file"></span> <span class="caret"></span></button>
                         <ul class="dropdown-menu dropdown-menu-files xdropdown-menu-right" role="menu">
                             <li role="presentation" class="dropdown-header recent-files">Recent Scripts</li>
-                            <li><a href="javascript:" class="recent-file-delete"><span 
+                            <li><a href="javascript:" class="recent-file-delete"><span
                             class="glyphicon glyphicon-trash"></span> Clear Scripts</a></li>
-    
+
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="btn-group xpull-right" xstyle="margin-right:6px;">
                     <button class="btn btn-default btn-xs btn-resize" type="button"
-                        data-container="body" data-toggle="popover" 
+                        data-container="body" data-toggle="popover"
                         data-placement="auto" data-trigger="hover"
-                        data-content="Resize the editor." 
+                        data-content="Resize the editor."
                         data-delay="1000">
                         <span class="glyphicon glyphicon-fullscreen"></span>
                     </button>
@@ -122,12 +122,12 @@
 
                 <div class="btn-group xpull-right hidden">
                     <div class="dropdown">
-                        <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown" data-original-title="" 
-                        title="">init.lua <span class="caret"></span></button>
-                        <ul class="dropdown-menu dropdown-luaeditor-startup" role="menu">
-                            <li role="presentation" class="dropdown-header">Startup init.lua Script</li>
-                            <li><a href="javascript:" class="luaeditor-startup-load">Edit the init.lua Script</a></li>
-                            <li><a href="javascript:" class="luaeditor-startup-save">Save the init.lua Script</a></li>
+                        <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown" data-original-title=""
+                        title="">init.python <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-pythoneditor-startup" role="menu">
+                            <li role="presentation" class="dropdown-header">Startup init.python Script</li>
+                            <li><a href="javascript:" class="pythoneditor-startup-load">Edit the init.python Script</a></li>
+                            <li><a href="javascript:" class="pythoneditor-startup-save">Save the init.python Script</a></li>
                         </ul>
                     </div>
 
@@ -135,8 +135,8 @@
 
                 <div class="btn-group hidden">
                     <div class="dropdown">
-                        <button type="button" class="btn btn-xs btn-default dropdown-toggle" 
-                        data-toggle="dropdown" data-original-title="" 
+                        <button type="button" class="btn btn-xs btn-default dropdown-toggle"
+                        data-toggle="dropdown" data-original-title=""
                         title=""><span class="glyphicon glyphicon-book"></span> <span class="caret"></span></button>
                         <ul class="dropdown-menu dropdown-sample-macros dropdown-menu-right" role="menu">
                             <li role="presentation" class="dropdown-header recent-files">Sample Macros</li>
@@ -189,38 +189,38 @@
                 </div>
 
             </div>
-            
-            <div class="alert-dismissible alert alert-devicefilename" role="alert" 
+
+            <div class="alert-dismissible alert alert-devicefilename" role="alert"
             style="padding:8px 0 0 0; margin:0 0 0 -4px;">
                 <button type="button" class="close hidden" data-dismiss="alert" aria-label="Close" style="padding-left:10px">
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="btn-group btn-group-xs">
                     <button class="btn btn-default btn-fileuploadrun" type="button">
-                        Upload > Run 
-                        <span class="glyphicon glyphicon-floppy-open"></span><span 
+                        Upload > Run
+                        <span class="glyphicon glyphicon-floppy-open"></span><span
                         class="glyphicon glyphicon-play">
                     </button>
                     <button class="btn btn-default btn-fileupload" type="button">
-                        Upload 
+                        Upload
                         <span class="glyphicon glyphicon-floppy-open"></span>
                     </button>
                     <button class="btn btn-default btn-filerun" type="button">
                         Run File
                         <span class="glyphicon glyphicon-play"></span>
                     </button>
-                    
+
                     <button class="btn btn-default btn-filedump" type="button"
-                        data-container="body" data-toggle="popover" 
+                        data-container="body" data-toggle="popover"
                         data-placement="auto" data-trigger="hover"
-                        data-content="Dump contents of the file to the console." 
+                        data-content="Dump contents of the file to the console."
                         data-delay="1000">
                         <span class="glyphicon glyphicon-eye-open"></span>
                     </button>
                     <button class="btn btn-default btn-filedelete" type="button"
-                        data-container="body" data-toggle="popover" 
+                        data-container="body" data-toggle="popover"
                         data-placement="auto" data-trigger="hover"
-                        data-content="Delete the file.lua and file.lc" 
+                        data-content="Delete the file.python and file.lc"
                         data-delay="1000">
                         <span class="glyphicon glyphicon-trash"></span>
                     </button>
@@ -230,55 +230,55 @@
                     <!--</button>-->
                 </div>
                 <div tabindex="0" class="devicefilename-region well hidden">
-                    <p style="padding-top:10px;">Give your file a name. The name will be used on the ESP8266 device as well 
+                    <p style="padding-top:10px;">Give your file a name. The name will be used on the ESP8266 device as well
                     as the name in your local storage file list.</p>
                     <div class="input-group" style="padding-top:2x;">
                         <span class="input-group-btn">
                             <button class="btn btn-default btn-devicefilenamego" type="button">Go!</button>
                         </span>
-                        <input type="text" class="form-control devicefilename" 
+                        <input type="text" class="form-control devicefilename"
                         placeholder="myFilenameOnDevice" value="asdf">
-                        <span class="input-group-addon">.lua</span>
+                        <span class="input-group-addon">.python</span>
                     </div>
                 </div>
             </div>
-            
+
 
         </div>
         <div class="panel-body">
 
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
-   
+
                 <!--<li class="active li-template"><a -->
                 <!--href="#com-chilipeppr-widget-tab-nodemcu-firmware" role="tab" -->
-                <!--data-toggle="tab"><span class="tab-file-name">udp.lua</span></a><button type="button" class="close" -->
+                <!--data-toggle="tab"><span class="tab-file-name">udp.python</span></a><button type="button" class="close" -->
                 <!--data-dismiss="alert" aria-label="Close"><span -->
                 <!--aria-hidden="true">×</span></button></li>-->
-                
+
                 <!--<li class="xhidden"><a -->
                 <!--href="#com-chilipeppr-widget-tab-nodemcu-docs" role="tab" -->
-                <!--data-toggle="tab"><span class="tab-file-name">init.lua</span></a><button type="button" class="close" -->
+                <!--data-toggle="tab"><span class="tab-file-name">init.python</span></a><button type="button" class="close" -->
                 <!--data-dismiss="alert" aria-label="Close"><span -->
                 <!--aria-hidden="true">×</span></button></li>-->
-                
-               
+
+
             </ul>
             <!-- Tab panes -->
-            
+
             <div class="tab-content">
-                <!--<textarea class="form-control luaeditor-maineditor hidden" -->
-                <!--placeholder="Enter Lua code Here. Press Run in toolbar to send the Lua script to the selected serial port. Ctrl+Enter is shortcut for run." -->
+                <!--<textarea class="form-control pythoneditor-maineditor hidden" -->
+                <!--placeholder="Enter Python code Here. Press Run in toolbar to send the Python script to the selected serial port. Ctrl+Enter is shortcut for run." -->
                 <!--spellcheck="false" rows="5"></textarea>-->
 
-                <!--<div role="tabpanel" id="com-chilipeppr-widget-tab-nodemcu-firmware" class="tab-pane active luaeditor-maineditor"></div>-->
+                <!--<div role="tabpanel" id="com-chilipeppr-widget-tab-nodemcu-firmware" class="tab-pane active pythoneditor-maineditor"></div>-->
             </div>
-            
-            <div id="com-chilipeppr-luaeditor" class="luaeditor-maineditor"></div>
+
+            <div id="com-chilipeppr-pythoneditor" class="pythoneditor-maineditor"></div>
 
         </div>
         <div class="panel-footer">
-            <textarea class="luaeditor-status form-control" rows="3">Status...</textarea>
+            <textarea class="pythoneditor-status form-control" rows="3">Status...</textarea>
         </div>
     </div>
 
