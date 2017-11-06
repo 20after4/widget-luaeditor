@@ -28,18 +28,18 @@ requirejs.config({
         //AceEditor: '//cdn.jsdelivr.net/ace/1.2.3/min/ace',
         ace: '//ace.c9.io/build/src/ace',
         aceAutoCompletion: '//ace.c9.io/build/src/ext-language_tools',
-        AceEditorLua: '//cdn.jsdelivr.net/ace/1.2.3/min/mode-lua',
+        AceEditorPython: '//cdn.jsdelivr.net/ace/1.2.3/min/mode-python',
     },
     shim: {
         // See require.js docs for how to define dependencies that
         // should be loaded before your script/widget.
-        AceEditorLua: ["ace"],
+        AceEditorPython: ["ace"],
         aceAutoCompletion: ["ace"]
     }
 });
 
 // ChiliPeppr Widget/Element Javascript
-cprequire_test(["inline:com-chilipeppr-widget-luaeditor"], function(myWidget) {
+cprequire_test(["inline:com-chilipeppr-widget-pythoneditor"], function(myWidget) {
 
     // Test this element. This code is auto-removed by the chilipeppr.load()
     // when using this widget in production. So use the cpquire_test to do things
@@ -1386,7 +1386,7 @@ l = nil
         statEl: null, // cache the status element in DOM
         status: function(txt) {
             console.log("status. txt:", txt);
-            if (this.statEl == null) this.statEl = $('#' + this.id + ' .luaeditor-status');
+            if (this.statEl == null) this.statEl = $('#' + this.id + ' .pythoneditor-status');
             var len = this.statEl.val().length;
             if (len > 3000) {
                 console.log("truncating status area text");
